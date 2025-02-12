@@ -1,0 +1,18 @@
+@use './utils/normalize';
+@use "./utils/variables";
+@use "./components/list-page";
+@use "./components/detail-page";
+@use "./components/edit-page";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: variables.$text-color;
+	background-color: variables.$primary-color;
+}
+

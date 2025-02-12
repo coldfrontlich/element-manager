@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { useStore } from '../../store/useStore'
 import { getPostDetails } from '../../api/client'
 
+
 const DetailPage = () => {
 	const { id } = useParams()
 	const navigate = useNavigate()

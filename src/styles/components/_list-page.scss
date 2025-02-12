@@ -1,0 +1,56 @@
+@use '../utils/variables';
+
+.list-page {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+
+	&__header {
+		margin-bottom: 20px;
+		cursor: default;
+	}
+
+	&__pagination {
+		display: flex;
+		gap: 10px;
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	&__pagination-button {
+		border: 1px solid variables.$border-color;
+    background-color: variables.$primary-color;
+		cursor: pointer;
+    padding: 15px;
+    border-radius: 8px;
+		transition: background-color 0.2s;
+
+		&:hover {
+			background-color: variables.$secondary-color;
+		}
+	}
+}
+
+.list-post {
+	border: 1px solid variables.$border-color;
+	border-radius: 8px;
+	padding: 15px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	transition: background-color 0.2s;
+
+	&:hover {
+		background-color: variables.$secondary-color;
+	}
+
+	&__title {
+		font-size: 18px;
+		margin-bottom: 8px;
+	}
+
+	&__body {
+		color: variables.$body-color;
+		font-size: 14px;
+		line-height: 1.4;
+	}
+}
