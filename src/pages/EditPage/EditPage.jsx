@@ -44,6 +44,9 @@ const EditPage = () => {
 
 	return (
 		<div className='edit-form'>
+			<button className='back-button' onClick={() => navigate(`/post/${id}`)}>
+				←
+			</button>
 			<h2>Редактирование поста #{id}</h2>
 			<Formik
 				initialValues={initialValues}
@@ -72,7 +75,6 @@ const EditPage = () => {
 							<button type='submit' disabled={isSubmitting}>
 								Сохранить
 							</button>
-
 						</div>
 					</Form>
 				)}

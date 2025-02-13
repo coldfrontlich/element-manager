@@ -18,6 +18,9 @@ const DetailPage = () => {
 
 	return (
 		<div className='detail-page'>
+			<button className='back-button' onClick={() => navigate('/')}>
+				←
+			</button>
 			<div className='detail-page__content'>
 				<h2 className='detail-page__id'>#{id}</h2>
 				<h3 className='detail-page__title'>{mergedPost.title}</h3>
