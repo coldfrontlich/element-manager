@@ -1,0 +1,44 @@
+@use '../utils/variables';
+
+.detail-page {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+
+	&__content {
+		border: 1px solid variables.$border-color;
+		padding: 15px;
+		border-radius: 8px;
+		padding: 20px;
+		border-radius: 4px;
+	}
+
+	&__id {
+		cursor: default;
+	}
+
+	&__title {
+		margin-bottom: 15px;
+		cursor: default;
+	}
+
+	&__body {
+		cursor: default;
+    color: variables.$body-color;
+	}
+
+	&__edit-button {
+		margin-top: 20px;
+		color: variables.$text-color;
+		border: 1px solid variables.$border-color;
+		background-color: variables.$primary-color;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 8px;
+		transition: background-color 0.2s;
+
+		&:hover {
+			background-color: variables.$secondary-color;
+		}
+	}
+}

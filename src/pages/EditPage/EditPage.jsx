@@ -40,7 +40,7 @@ const EditPage = () => {
 		navigate(`/post/${id}`)
 	}
 
-	if (!initialValues.title) return <div>Loading...</div>
+	if (!initialValues.title) return <div className='edit-form'>Loading...</div>
 
 	return (
 		<div className='edit-form'>
